@@ -1,0 +1,110 @@
+html {
+  margin: 0;
+  background-color: #000;
+  font-family: helvetica;
+  color: #fff; }
+
+#top {
+  background: #fff;
+  color: #000;
+  position: fixed;
+  width: 100%; }
+
+#resume {
+  cursor: pointer; }
+  #resume:hover {
+    background: #5cd3a3; }
+    #resume:hover a {
+      color: #fff; }
+  #resume a {
+    color: #5cd3a3;
+    text-decoration: none; }
+
+#name {
+  cursor: pointer; }
+  #name:hover {
+    background: pink; }
+    #name:hover a {
+      color: #fff; }
+  #name a {
+    color: #000;
+    text-decoration: none; }
+
+ul {
+  padding: 0;
+  margin-top: 0; }
+
+.link, .info {
+  text-align: center; }
+
+.link {
+  border-top: 1px solid #fff;
+  text-decoration: none; }
+  .link:last-child {
+    border-bottom: 1px solid #fff; }
+  .link:hover {
+    transition: background 0.4s;
+    background: #fff; }
+    .link:hover a {
+      animation: colorchange 3s ease-in-out 0s infinite; }
+    .link:hover:first-child {
+      border-top: 1px solid #000; }
+    .link:hover:last-child {
+      border-bottom: 1px solid #000; }
+  .link a {
+    text-decoration: none;
+    color: inherit; }
+@keyframes colorchange {
+  0% {
+    color: #FF4081; }
+  20% {
+    color: #E040FB; }
+  40% {
+    color: #00E676; }
+  60% {
+    color: #EEFF41; }
+  80% {
+    color: #64FFDA; }
+  100% {
+    color: #536DFE; } }
+footer {
+  background: #fff;
+  color: #000;
+  position: fixed;
+  bottom: 0px;
+  width: 100%; }
+  footer a {
+    text-decoration: none;
+    color: inherit; }
+
+#github {
+  cursor: pointer; }
+  #github:hover {
+    background: #913399; }
+    #github:hover a {
+      color: #fff; }
+  #github a {
+    color: #000;
+    text-decoration: none; }
+
+#codepen {
+  cursor: pointer; }
+  #codepen:hover {
+    background: #343436; }
+    #codepen:hover a {
+      color: #fff; }
+  #codepen a {
+    color: #000;
+    text-decoration: none; }
+
+#linkedin {
+  cursor: pointer; }
+  #linkedin:hover {
+    background: #0077b5; }
+    #linkedin:hover a {
+      color: #fff; }
+  #linkedin a {
+    color: #000;
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
