@@ -11,6 +11,9 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+  <script src="js/handlebars-v4.0.5.js" charset="utf-8"></script>
 
 </head>
 
@@ -28,7 +31,7 @@
 			</p>
 		</div>
 		<div class="fr w-15 pv2 mh1">
-			<div id="temp"></div>
+			<div id="temperature"></div>
     </div>
     <div class="fr w-15 pv2 mh1">
 			<div id="location"></div>
@@ -36,19 +39,39 @@
   </div>
 </div>
 
+
+
 <div class="pv3"></div>
 
+<!-- using handlebars js to build in my list of links  -->
+<div class="mw100" id="target"></div>
 
-<div class="mw100">
-	<ul>
+<script id="template" type="text/x-handlebars-template">
+  <ul id="links">
+    {{#each links}}
+      <li class="link pv3">
+        <p class="f6 f4-m f3-l">
+          <a href="{{aLink}}" target="_blank">{{heading}}</a>
+        </p>
+      </li>
+    {{/each}}
+  </ul>
+  {{#each mainTitle}}
+    <div class="info">
+      <h1 class="f1 f-subheadline-m f-headline-l lh-solid fw6">{{title}}</h1>
+    </div>
+  {{/each}}
+</script>
 
-		<!-- <li class="link pv3">
+<!-- <div class="mw100">
+	<ul id="links">
+		<li class="link pv3">
 			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/grammargame/" target="_blank">
-					/english_grammar/
+				<a href="http://aledwassell.com/wikipedia_viewer/" target="_blank">
+					/wikipedia_viewer/
 				</a>
 			</p class="f6 f4-m f3-l">
-		</li> -->
+		</li>
 		<li class="link pv3">
 			<p class="f6 f4-m f3-l">
 				<a href="http://aledwassell.com/gif-app/" target="_blank">
@@ -95,20 +118,20 @@
 			</p class="f6 f4-m f3-l">
 		</li>
 	</ul>
-</div>
+</div> -->
 
 <div class="pv2"></div>
 
 <footer class="mw100 pv0">
 	<div class="mw100 ph1-ns mh1">
 		<div class="cf ph1-ns">
-			<div class="fr pv0 mh0" id="github">
+			<div class="fr pv1-ns mh0" id="github">
 				<p><a href="https://github.com/aledwassell" target="_blank">github/</a></p>
 			</div>
-			<div class="fr pv0 mh0" id="codepen">
+			<div class="fr pv1-ns mh0" id="codepen">
 				<p><a href="http://codepen.io/aledwassell/" target="_blank">codepen/</a></p>
 			</div>
-			<div class="fr pv0 mh0" id="linkedin">
+			<div class="fr pv1-ns mh0" id="linkedin">
 				<p><a href="https://www.linkedin.com/in/aled-wassell-688bba1a/" target="_blank">linkedin/</a></p>
 			</div>
 		</div>
@@ -117,7 +140,8 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-  <script src="js/index.js"></script>
+  <script src="js/location.js"></script>
+  <script src="js/view.js" charset="utf-8"></script>
 
 </body>
 </html>
