@@ -1,0 +1,35 @@
+{
+  "mainTitle" : {
+    "title": "[a front-end<br>developer]"
+  },
+  "links": [
+    {
+      "heading": "/wikipedia_viewer/",
+      "aLink": "http://aledwassell.com/wikipedia_viewer/"
+    },
+    {
+      "heading": "/giphy_api/",
+      "aLink": "http://aledwassell.com/gif-app/"
+    },
+    {
+      "heading": "/weather_api/",
+      "aLink": "http://aledwassell.com/local-weather/"
+    },
+    {
+      "heading": "/responsive/",
+      "aLink": "http://aledwassell.com/responsive/module_3/"
+    },
+    {
+      "heading": "/quote_maker/",
+      "aLink": "http://aledwassell.com/quoter/"
+    },
+    {
+      "heading": "/todos_app/",
+      "aLink": "http://aledwassell.com/app/"
+    },
+    {
+      "heading": "/david_bowie/",
+      "aLink": "http://aledwassell.com/david_bowie_tribute/"
+    }
+  ]
+}

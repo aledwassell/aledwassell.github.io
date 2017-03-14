@@ -50,17 +50,19 @@
   <ul id="links">
     {{#each links}}
       <li class="link pv3">
+        {{#if title}}
+        <div class="info">
+          <h1 class="f1 f-subheadline-m f-headline-l lh-solid fw6">
+            <a>{{{title}}}</a>
+          </h1>
+        </div>
+        {{/if}}
         <p class="f6 f4-m f3-l">
           <a href="{{aLink}}" target="_blank">{{heading}}</a>
         </p>
       </li>
     {{/each}}
   </ul>
-  {{#each mainTitle}}
-    <div class="info">
-      <h1 class="f1 f-subheadline-m f-headline-l lh-solid fw6">{{title}}</h1>
-    </div>
-  {{/each}}
 </script>
 
 <!-- <div class="mw100">
