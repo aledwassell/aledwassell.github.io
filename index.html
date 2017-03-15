@@ -18,26 +18,27 @@
 </head>
 
 <body class="helvetica">
+
   <div class="mw100 ph1-ns w-100" id="top">
-  <div class="cf ph1-ns mh1">
-    <div class="fl w-15 pv2 mh1" id="name">
-			<p>
-				<a class="pointer" href="http://aledwassell.com">aled wassell</a>
-			</p>
-    </div>
-		<div class="fr w-15 pv2 mh1" id="resume">
-			<p>
-				<a class="pointer" href="http://aledwassell.com/aledwassell_CV.pdf" target="_blank">resume</a>
-			</p>
-		</div>
-		<div class="fr w-15 pv2 mh1">
-			<div id="temperature"></div>
-    </div>
-    <div class="fr w-15 pv2 mh1">
-			<div id="location"></div>
+    <div class="cf ph1-ns mh1">
+      <div class="fl w-15 pv2 mh1" id="name">
+  			<p>
+  				<a class="pointer" href="http://aledwassell.com">aled wassell</a>
+  			</p>
+      </div>
+  		<div class="fr w-15 pv2 mh1" id="resume">
+  			<p>
+  				<a class="pointer" href="http://aledwassell.com/aledwassell_CV.pdf" target="_blank">resume</a>
+  			</p>
+  		</div>
+  		<div class="fr w-15 pv2 mh1">
+  			<div id="temperature"></div>
+      </div>
+      <div class="fr w-15 pv2 mh1">
+  			<div id="location"></div>
+      </div>
     </div>
   </div>
-</div>
 
 
 
@@ -49,7 +50,7 @@
 <script id="template" type="text/x-handlebars-template">
   <ul id="links">
     {{#each links}}
-      <li class="link pv3">
+      <li class="link pv3 pv3-ns pv3-m pv3-l">
         {{#if title}}
         <div class="info">
           <h1 class="tc f1 f-subheadline-m f-headline-l lh-solid fw6">
@@ -57,7 +58,7 @@
           </h1>
         </div>
         {{/if}}
-        <p class="tc f6 f4-m f3-l">
+        <p class="tc f3 f3-ns f4-m f3-l">
           <a class="pointer" href="{{aLink}}" target="_blank">{{heading}}</a>
         </p>
       </li>
@@ -65,75 +66,18 @@
   </ul>
 </script>
 
-<!-- <div class="mw100">
-	<ul id="links">
-		<li class="link pv3">
-			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/wikipedia_viewer/" target="_blank">
-					/wikipedia_viewer/
-				</a>
-			</p class="f6 f4-m f3-l">
-		</li>
-		<li class="link pv3">
-			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/gif-app/" target="_blank">
-					/giphy_api/
-				</a>
-			</p class="f6 f4-m f3-l">
-		</li>
-		<li class="link pv3">
-			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/local-weather/" target="_blank">
-					/weather_api/
-				</a>
-			</p class="f6 f4-m f3-l">
-		</li>
-    <li class="link pv3">
-			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/responsive/module_3/" target="_blank">
-					/responsive/
-				</a>
-			</p class="f6 f4-m f3-l">
-		</li>
-	</ul>
-
-	<div class="info">
-		<h1 class="f1 f-subheadline-m f-headline-l lh-solid fw6">/a front-end<br>developer/</h1>
-	</div>
-
-	<ul>
-		<li class="link pv3">
-			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/quoter/" target="_blank">/quote_maker/</a>
-			</p class="f6 f4-m f3-l">
-		</li>
-		<li class="link pv3">
-			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/app/" target="_blank">/todos_app/</a>
-			</p class="f6 f4-m f3-l">
-		</li>
-		<li class="link pv3">
-			<p class="f6 f4-m f3-l">
-				<a href="http://aledwassell.com/david_bowie_tribute/" target="_blank">
-					/david_bowie/
-				</a>
-			</p class="f6 f4-m f3-l">
-		</li>
-	</ul>
-</div> -->
-
 <div class="pv2"></div>
 
 <footer class="w-100 pv0">
 	<div class="mw100 ph1-ns mh1">
 		<div class="cf ph1-ns">
-			<div class="fr pv1-ns mh0" id="github">
+			<div class="fr pv0-ns mh0" id="github">
 				<p><a class="pointer" href="https://github.com/aledwassell" target="_blank">github/</a></p>
 			</div>
-			<div class="fr pv1-ns mh0" id="codepen">
+			<div class="fr pv0-ns mh0" id="codepen">
 				<p><a class="pointer" href="http://codepen.io/aledwassell/" target="_blank">codepen/</a></p>
 			</div>
-			<div class="fr pv1-ns mh0" id="linkedin">
+			<div class="fr pv0-ns mh0" id="linkedin">
 				<p><a class="pointer" href="https://www.linkedin.com/in/aled-wassell-688bba1a/" target="_blank">linkedin/</a></p>
 			</div>
 		</div>
