@@ -1,35 +1,29 @@
 @import "pop.sass"
 
+$focus-color: #5cd3a3
+$name-color: #ff80ab
 $li-borders: 1px solid #fff
 $animate: colorchange 3s ease-in-out 0s infinite
 
-html
-	background-color: #000
-	// font-family: helvetica
-	color: #fff
-
-#top
-	background: #fff
-	color: #000
-	position: fixed
+a
+	outline: none
+	text-decoration: none
 
 #resume
 	&:hover
-		background: #5cd3a3
+		background: $focus-color
 		a
 			color: #fff
 	a
-		color: #5cd3a3
-		text-decoration: none
+		color: $focus-color
 
 #name
 	&:hover
-		background: pink
+		background: $name-color
 		a
 			color: #fff
 	a
 		color: #000
-		text-decoration: none
 
 .link
 	border-top: $li-borders
@@ -51,6 +45,20 @@ html
 	a
 		text-decoration: none
 		color: inherit
+
+	@-webkit-keyframes colorchange
+		0%
+			color: #FF4081
+		20%
+			color: #E040FB
+		40%
+			color: #00E676
+		60%
+			color: #EEFF41
+		80%
+			color: #64FFDA
+		100%
+			color: #536DFE
 
 	@keyframes colorchange
 		0%
