@@ -9,11 +9,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.6.2/tachyons.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script src="js/handlebars-v4.0.5.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="public/style.css">
 
 </head>
 
@@ -75,25 +73,6 @@
 <!-- using handlebars js to build in my list of links  -->
 <div class="mw100" id="target"></div>
 
-<script id="template" type="text/x-handlebars-template">
-  <ul id="links">
-    {{#each links}}
-      <li class="link pv3 pv3-ns pv3-m pv3-l">
-        {{#if title}}
-        <div class="info">
-          <h1 class="tc f1 f-subheadline-m f-headline-l lh-solid fw6">
-            {{{title}}}
-          </h1>
-        </div>
-        {{/if}}
-        <p class="tc f3 f3-ns f4-m f3-l">
-          <a class="pointer" href="{{aLink}}" target="_blank">{{heading}}</a>
-        </p>
-      </li>
-    {{/each}}
-  </ul>
-</script>
-
 <div class="pv2"></div>
 
 <footer class="w-100 pv0">
@@ -115,12 +94,11 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-  <script src="js/location.js"></script>
-  <script src="js/view.js" charset="utf-8"></script>
+  <!-- <script src="js/location.js"></script> -->
+  <script src="public/main-bundled.js" charset="utf-8"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" charset="utf-8"></script>
-  <script src="js/pop.js" charset="utf-8"></script>
 
 </body>
 </html>

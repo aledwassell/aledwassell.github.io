@@ -1,25 +1,10 @@
+const $ = require('jquery');
+
 $(document).ready(function(){
-	// $("#top").touching("li").mouseover(function(){
-	// 	$("#top").css({"color": "#000", "border-bottom": "1px solid #000"});
-	// });
-
-  var lat, lon, city;
-  //default location
-	var coordinates = '&q=London';
+  let lat, lon, city;
   // grab all the targets
-  var locationTarget = $('#location');
-  var weatherTarget = $('#weather');
-  var tempTarget = $('#temperature');
-  // grab the text from the input
-
-	var locationUrl = '//ipinfo.io/json';
-
-	var locationText = $('#locationText').keyup(function(){
-	   coordinates = '&q=' + $(this).val();
-	})
-	$('#locationBtn').click(function(){
-		generate();
-	})
+  const locationTarget = $('#location');
+  const tempTarget = $('#temperature');
 
   function getLocation() {
     var xhr = new XMLHttpRequest();
@@ -46,9 +31,6 @@ $(document).ready(function(){
       console.log("You knocked me off the edge!!The location API only allows 300 requests per day. Please enter you location manually.");
     }
 
-    // while looking for you location would like to try using an animated gif here
-    weatherTarget.html("<p>Finding your location…</p>");
-
   };
   getLocation();
 
@@ -66,19 +48,19 @@ $(document).ready(function(){
       if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText);
         console.log(data);
+        console.log('got weather');
         gotData(data);
       }
     };
 
 
     function gotData(data){
-
+      console.log(data);
+      console.log('got data');
       location = city.toLowerCase();
-      weather = data.weather[0].main;
       temp = Math.floor(data.main.temp);
 
       locationTarget.html( '<p>' + location + '</p>');
-      weatherTarget.html('<p> ' + weather + '</p>');
       tempTarget.html( '<p> ' + temp + '°C</p>');
     };
   }

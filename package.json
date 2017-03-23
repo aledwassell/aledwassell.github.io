@@ -1,0 +1,33 @@
+{
+  "name": "alwass_2.0",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aledwassell/alwass_2.0.git"
+  },
+  "keywords": [
+    "web",
+    "development"
+  ],
+  "author": "Aled Wassell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aledwassell/alwass_2.0/issues"
+  },
+  "homepage": "https://github.com/aledwassell/alwass_2.0#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "magnific-popup": "^1.1.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "handlebars": "^4.0.6",
+    "handlebars-loader": "^1.4.0",
+    "path": "^0.12.7"
+  }
+}

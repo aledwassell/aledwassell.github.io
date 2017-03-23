@@ -1,3 +1,6 @@
+const $ = require('jquery');
+require('magnific-popup');
+
 $(document).ready(function(){
 	$('.open-popup').magnificPopup({
   type:'inline',

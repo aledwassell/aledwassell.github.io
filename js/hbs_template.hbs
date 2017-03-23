@@ -1,0 +1,16 @@
+<ul id="links">
+  {{#each links}}
+    <li class="link pv3 pv3-ns pv3-m pv3-l">
+      {{#if title}}
+      <div class="info">
+        <h1 class="tc f1 f-subheadline-m f-headline-l lh-solid fw6">
+          {{{title}}}
+        </h1>
+      </div>
+      {{/if}}
+      <p class="tc f3 f3-ns f4-m f3-l">
+        <a class="pointer" href="{{aLink}}" target="_blank">{{heading}}</a>
+      </p>
+    </li>
+  {{/each}}
+</ul>
