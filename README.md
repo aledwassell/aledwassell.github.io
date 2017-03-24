@@ -7,8 +7,8 @@ Using Handlebars to build the list items for the links, this uses some simple lo
 ### ipfind.com and openweathermap.org
 I am using the open weather map api to display the temperature and the ipfind api to find your location or the city you are in based on your ip address.
 
-### webpack
+### Webpack
 All bundled together using Webpack, I've only just started using Webpack and NPM before that, it's been a big learning curve for me.
 
-###Magnific Popup
+### Magnific Popup
 I am using Magnific Popup to display my personal profile and image.
