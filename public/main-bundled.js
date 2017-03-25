@@ -11229,7 +11229,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.title : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "      <p class=\"tc f3 f3-ns f4-m f3-l\">\n        <a class=\"pointer\" href=\""
     + alias4(((helper = (helper = helpers.aLink || (depth0 != null ? depth0.aLink : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"aLink","hash":{},"data":data}) : helper)))
-    + "\" target=\"_blank\">"
+    + "\">"
     + alias4(((helper = (helper = helpers.heading || (depth0 != null ? depth0.heading : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"heading","hash":{},"data":data}) : helper)))
     + "</a>\n      </p>\n    </li>\n";
 },"2":function(container,depth0,helpers,partials,data) {

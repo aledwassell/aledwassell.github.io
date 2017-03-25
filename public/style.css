@@ -1,13 +1,8 @@
-.white-popup {
-  color: #000;
-  display: flex;
-  position: relative;
-  background: #fff;
-  padding: 0px;
+.popup {
   width: auto;
-  max-width: 550px;
-  margin: 20px auto; }
-  .white-popup a {
+  margin: 20px auto;
+  height: 200px !important; }
+  .popup a {
     text-decoration: none;
     color: inherit; }
 
@@ -15,7 +10,7 @@ img {
   height: 300px;
   left: -140px;
   bottom: 0px;
-  z-index: 2; }
+  z-index: 1; }
 
 a {
   outline: none;
