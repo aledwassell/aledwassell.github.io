@@ -3,10 +3,10 @@
     "title": "[a front-end<br>developer]"
   },
   "links": [
-    {
-      "heading": "/english_grammar/",
-      "aLink": "http://aledwassell.com/eng_grammar/"
-    },
+    //{
+    //  "heading": "/english_grammar/",
+    //  "aLink": "http://aledwassell.com/eng_grammar/"
+    //},
     {
       "heading": "/wikipedia_viewer/",
       "aLink": "http://aledwassell.com/wikipedia_viewer/"
