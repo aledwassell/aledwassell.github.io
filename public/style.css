@@ -1,7 +1,7 @@
 .popup {
+  overflow: auto;
   width: auto;
-  margin: 20px auto;
-  height: 220px !important; }
+  margin: 20px auto; }
   .popup a {
     text-decoration: none;
     color: inherit; }
@@ -78,11 +78,19 @@ a {
 footer {
   background: #fff;
   color: #000;
-  position: fixed;
+  height: 3em;
   bottom: 0px; }
   footer a {
     text-decoration: none;
     color: inherit; }
+
+#copy:hover {
+  background: #39cccc; }
+  #copy:hover a {
+    color: #fff; }
+#copy a {
+  color: #000;
+  text-decoration: none; }
 
 #github:hover {
   background: #913399; }
