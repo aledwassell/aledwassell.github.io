@@ -8,14 +8,13 @@ $(document).ready(function(){
 
   function getLocation() {
     var xhr = new XMLHttpRequest();
-    var url = 'https://ipfind.co/me?auth=60262ad8-e6c4-4fd8-bfb1-d48383f50897&ip=8.8.8.8'
+    var url = 'https://ipfind.co/me?auth=60262ad8-e6c4-4fd8-bfb1-d48383f50897&ip=8.8.8.8';
 		xhr.open('GET', url, true);
 		xhr.send();
 
     xhr.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
         var data = JSON.parse(this.responseText);
-				console.log(data);
         lat = data.latitude;
         lon = data.longitude;
         city = data.city;
@@ -37,29 +36,24 @@ $(document).ready(function(){
   var location, weather, temp;
 
   function getWeather(){
-    var api = 'http://api.openweathermap.org/data/2.5/weather?&APPID=6bd81b03a64f7ae2cb9240d3271279aa'
-      units = '&units=metric'
-      url = api + coordinates + units
-      xml = new XMLHttpRequest()
+    var api = 'http://api.openweathermap.org/data/2.5/weather?&APPID=6bd81b03a64f7ae2cb9240d3271279aa';
+    let units = '&units=metric';
+    let url = api + coordinates + units;
+    let xml = new XMLHttpRequest();
 
     xml.open('GET', url, true);
     xml.send();
     xml.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         var data = JSON.parse(this.responseText);
-        console.log(data);
-        console.log('got weather');
         gotData(data);
       }
     };
 
 
     function gotData(data){
-      console.log(data);
-      console.log('got data');
       location = city.toLowerCase();
       temp = Math.floor(data.main.temp);
-
       locationTarget.html( '<p>' + location + '</p>');
       tempTarget.html( '<p> ' + temp + '°C</p>');
     };

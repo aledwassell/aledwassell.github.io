@@ -2,8 +2,13 @@ const $ = require('jquery');
 require('magnific-popup');
 
 $(document).ready(function(){
-	$('.open-popup').magnificPopup({
-  type:'inline',
+	$('.ajax-popup-link').magnificPopup({
+  type:'ajax',
+	ajax: {
+		settings: null,
+		cursor: 'mfp-ajax-cur',
+		tError: '<a href="%url%">The content</a> could not be loaded.'
+	},
   midClick: true,
 	zoom: {
 		enabled: true,
