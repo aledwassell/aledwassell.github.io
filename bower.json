@@ -1,0 +1,24 @@
+{
+  "name": "alwass_3.0",
+  "description": "Aled Wassel has a new implementation of this website in angularjs",
+  "main": "index.js",
+  "authors": [
+    "Aled Wassell"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "web",
+    "development"
+  ],
+  "homepage": "aledwassell.uk",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.9"
+  }
+}
