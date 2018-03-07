@@ -4,7 +4,8 @@
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/aledwassell/alwass_2.0#readme",
   "dependencies": {
+    "express": "^4.16.2",
     "jquery": "^3.2.1",
     "magnific-popup": "^1.1.0",
     "whatwg-fetch": "^2.0.3"

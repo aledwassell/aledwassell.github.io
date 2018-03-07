@@ -19,6 +19,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "angularjs#^1.6.9"
+    "angular": "angularjs#^1.6.9",
+    "tachyons": "^4.9.1",
+    "reset-css": "^2.2.1",
+    "Font-Awesome": "^5.0.8"
   }
 }
