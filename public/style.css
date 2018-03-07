@@ -1,4 +1,6 @@
 @import '/bower_components/reset-css/reset.css';
+@import '/bower_components/tachyons/css/tachyons.min.css';
+@import '/bower_components/Font-Awesome/web-fonts-with-css/css/fontawesome.min.css';
 
 .popup {
   width: auto;
