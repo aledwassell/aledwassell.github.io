@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('aledwassellUK')
+    let aledwassellUK = angular.module('aledwassellUK', ['ngResource'])
         .controller('mainRepresentationContoller', ['$scope', function ($scope) {
             $scope.name = 'aled / wassell'
         }])
