@@ -11,12 +11,13 @@
 
     <link href="components/Font-Awesome/web-fonts-with-css/css/fontawesome.min.css">
 
+    <script type="text/javascript" src="components/angular/angular.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="helvetica bg-black white">
-<i class="fa fa-5x fa-camera"></i>
+<body class="helvetica bg-black white" ng-app="aledwassellUK">
 <div class="mw100 ph1-ns w-100 bg-white black fixed" id="top">
     <div class="cf ph1-ns mh1">
         <div class="fl w-15 f4 f5-ns pv3 pv2-ns mh1" id="name">
@@ -42,6 +43,12 @@
 
 <!-- using handlebars js to build in my list of links  -->
 <div class="mw100" id="target"></div>
+
+<h1></h1>
+
+<div ng-controller="mainRepresentationContoller">
+    <h1 class="pv4 f-6">{{name}}</h1>
+</div>
 
 <!-- magnific popup -->
 <div id="pop" class="popup mfp-hide relative bg-white black mw6 pv2 pl3"><!-- mfp-hide -->
@@ -115,6 +122,5 @@
     ga('send', 'pageview');
 
 </script>
-<script type="text/javascript" src="components/angular/angular.min.js"></script>
 </body>
 </html>

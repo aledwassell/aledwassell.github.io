@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --watch public server.js -e html,css"
+    "start": "nodemon --watch public --watch public/js server.js -e html,css,js"
   },
   "repository": {
     "type": "git",
@@ -24,12 +24,8 @@
   "dependencies": {
     "express": "^4.16.2",
     "jquery": "^3.2.1",
-    "magnific-popup": "^1.1.0",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
-    "handlebars": "^4.0.6",
-    "handlebars-loader": "^1.4.0",
-    "path": "^0.12.7"
   }
 }
